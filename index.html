@@ -9,27 +9,32 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <h1>Formulario de Estagiario em Dev</h1><br><br>
     <form name="Formulario" method="POST">
         <label>Seu Nome e Sobrenome:</label><br>
         <input type="text" name="ForNome" size="40" maxlength="30" checked><br><br>
 
-        <label>Digite seu e-mail</label><br>
+        <label>Seu e-mail:</label><br>
         <input type="email" name="ForEmail" size="40" maxlength="30" checked><br><br>
 
         <label>Qual Sua Experiencia:</label><br>
-        <input type="checkbox" name="ForExp1" value="Html"><label>Html</label>
-        <input type="checkbox" name="ForExp2" value="Css"><label>CSS</label>
-        <input type="checkbox" name="ForExp3" value="JavaScript"><label>JavaScript</label>
-        <input type="checkbox" name="ForExp4" value="MySql"><label>MySql</label>
-        <input type="checkbox" name="ForExp5" value="React"><label>React / React Js</label><br><br>
+        <input type="checkbox" name="ForExp1" value="Html"><label> Html </label>
+        <input type="checkbox" name="ForExp2" value="Css"><label> CSS </label>
+        <input type="checkbox" name="ForExp3" value="JavaScript"><label> JavaScript </label>
+        <input type="checkbox" name="ForExp4" value="MySql"><label> MySql </label>
+        <input type="checkbox" name="ForExp5" value="React"><label> React or React Native </label><br><br>
 
         <label>Disponibilidade de Horario:</label><br>
-        <input type="radio" name="ForHor1" value="Manha"><label>Manhã</label><br>
-        <input type='radio' name='ForHor2' value="Tarde"><label>Tarde</label><br>
-        <input type="radio" name="ForHor3" value="Noite"><label>Noite</label><br><br>
+        <input type="checkbox" name="ForHor1" value="Manha"><label> Manhã</label><br>
+        <input type='checkbox' name='ForHor2' value="Tarde"><label> Tarde</label><br>
+        <input type="checkbox" name="ForHor3" value="Noite"><label> Noite</label><br><br>
 
         <label>Fale um pouco sobre você:</label><br>
         <textarea name="ForMore"cols="40" rows="7" placeholder="Em poucas palavras"></textarea>
+        <br><br>
+        <input class="bt" type="submit" value="Enviar">
+
+        <input class="bt" type="button" value="Sem ação">
     </form>
 </body>
 </html>

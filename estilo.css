@@ -1,3 +1,7 @@
+:root{
+    --main-bg-color: rgba(0,0,0,0)
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -28,6 +32,11 @@ input:focus{
     border:1px solid #000;
     border-radius: 3px;
     width: 80px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bt:hover{
+    background-color: rgb(170, 140, 127);
 }
 label{
     
@@ -36,7 +45,7 @@ label{
     text-shadow: 1px 1px 3px #999;
 }
 textarea{
-    background-color: rgba(0,0,0,0);
+    background-color: var(--main-bg-color);
     margin-top: 5px;
     outline: 0;
     font-family: sans-serif;
@@ -47,3 +56,12 @@ h1{
     letter-spacing: 2.5px;
     text-shadow: 5px 2px 5px #666;
 }
+h1:after{
+    content: '';
+    display: block;
+    width: 400px;
+    height: 1px;
+    background-color: currentColor;
+    margin: 0 auto;
+}
+
